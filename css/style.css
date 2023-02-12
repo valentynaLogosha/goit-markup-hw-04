@@ -402,6 +402,9 @@ img {
 .customer-item a:hover svg {
   fill: var(--header-focus-hover-color);
 }
+.customer-item a:focus svg {
+  fill: var(--header-focus-hover-color);
+}
 
 .flex-container {
   display: flex;
