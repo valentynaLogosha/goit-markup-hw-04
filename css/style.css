@@ -237,7 +237,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
-  padding: 24px 0;
+  height: 112px;
   fill: var(--icon-color);
 }
 
@@ -332,7 +332,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-link-color);
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .social-network-list {
   display: flex;
@@ -364,21 +364,11 @@ img {
   padding-top: 130px;
   padding-bottom: 120px;
 }
-
 .customer-item {
   width: 168px;
   height: 88px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-}
-.customer-item:hover,
-.customer-item:focus {
-  border-color: var(--header-focus-hover-color);
-}
-
-.customer-item:hover,
-.customer-item:focus {
-  fill: var(--header-focus-hover-color);
 }
 .clients-link {
   display: flex;
@@ -389,15 +379,18 @@ img {
   border-color: 1px solid var(--icon-color);
   color: var(--icon-color);
 }
-
-.clients-icon {
-  fill: currentColor;
-}
 .flex-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 24px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  background-color: var(--header-focus-hover-color);
+}
+.clients-icon {
+  fill: currentColor;
 }
 
 /*  Footer */
