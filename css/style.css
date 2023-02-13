@@ -367,16 +367,15 @@ img {
 .customer-item {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 .clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
-  border-color: 1px solid var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--icon-color);
 }
 .flex-container {
@@ -385,9 +384,10 @@ img {
   gap: 24px;
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  background-color: var(--header-focus-hover-color);
+.clients-link:is(:hover, :focus) {
+  border-color: var(--header-focus-hover-color);
+  color: var(--header-focus-hover-color);
+  background-color: var(--main-color);
 }
 .clients-icon {
   fill: currentColor;
